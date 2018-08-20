@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="item-list.css">
+    <!-- Bootstrap Material, JS, Proper.js, Jquery, Material Design Icons -->
+    <!-- 이 프로젝트에 대한 모든 저작권은 (주)우아한 형제들 에게 있습니다. -->
+    <!-- Made by Demain | github.com/demain18 -->
+    <title>배달의 민족</title>
+    <style>
+        a {
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #2ac1bc;
+        }
+        .dropdown-menu-right {
+            right: 0;
+            left: auto;
+        }
+        .icon-set01 {
+            color: #000000;
+            position: relative;
+            top: 6px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar fixed-top">
+    <a href="index.html"><span class="brand"><img src="asset/img/bamin-brand.png" alt="brand" width="150"></span></a>
+    <div class="btn-group">
+      <button class="btn bmd-btn-icon dropdown-toggle" type="button" id="ex3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="material-icons icon-set02">account_circle</i>
+      </button>
+      <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="ex3">
+        <ul>
+           <li>내 정보</li>
+           <li>장바구니</li>
+           <li>포인트</li>
+           <li>쿠폰</li>
+           <li>찜한 가게</li>
+           <li>결재 내역</li>
+           <li>리뷰관리</li>
+           <li>고객센터</li> 
+        </ul>
+      </div>
+    </div>
+</nav>
+<div class="container-custom">
+
+  <ul class="nav nav-tabs nav-menu">
+  <li class="nav-item">
+    <a class="nav-link" href="#">배달의 민족</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">한식</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">분식</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">돈가스</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">치킨</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">피자</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">중국집</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">족발</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">야식</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">찜, 탕</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">도시락</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">디저트</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">패스트푸드</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">프렌차이즈</a>
+  </li>
+  </ul>
+  <div class="sub-menu row">
+      <p class="store-count">음식점 <span class="pd3">3곳</span>을 찾았습니다.</p>
+      <div class="input-group mb-3 item-sort">
+          <select class="custom-select" id="inputGroupSelect01">
+             <optgroup label="가게 종류">
+                <option selected>모든 가게 보기</option>
+                <option value="1">바로결제 가게만</option>
+                <option value="2">만나서결제 가게만</option>
+                <option value="3">프랜차이즈 가게만</option>
+             </optgroup>
+             <optgroup label="정보 종류">
+                <option selected>기본 순서로 보기</option>
+                <option value="1">가까운 순</option>
+                <option value="2">주문 많은 순</option>
+                <option value="3">리뷰 좋은 순</option>
+                <option value="4">인기 많은 순</option>
+                <option value="5">찜 많은 순</option>
+             </optgroup>
+             <optgroup label="거리">
+                <option selected>근처 가게만 보기 (3km)</option>
+                <option value="1">멀리까지 (5km)</option>
+                <option value="2">머어얼리까지 (7km)</option>
+                <option value="3">머어어어얼리까지 (12km)</option>
+             </optgroup>
+          </select>
+        </div>
+  </div>
+  <p class="superlist"><a href="#" class="badge badge-danger">SuperList</a></p>
+  <div class="big-column row">
+      <div class="middle-column">
+          <a href="item-page-menu.html">
+              <div class="item-card card01 row">
+              <div class="item-image">
+                  <img src="asset/img/item-image.png" alt="item-image" width="70">
+              </div>
+              <div class="item-info">
+                  <p class="info-title"><strong>후라이드 참 잘하는 집</strong><span class="special-tags"><span class="badge badge-pill badge-primary">우수</span><span class="badge badge-pill badge-warning">쿠폰</span></span></p>
+                  <p class="scope pd1"><i class="material-icons scope-rate">star_rate</i><strong class="pd2">4.6</strong>최근리뷰 100+ 최근사장님댓글 100+</p>
+                  <p class="info-detailmenu pd1">후라이드치킨, 양념치킨</p>
+              </div>
+          </div>
+          </a>
+          <div class="item-card card02 row">
+              <div class="item-image">
+                  <img src="asset/img/item-image.png" alt="item-image" width="70">
+              </div>
+              <div class="item-info">
+                  <p class="info-title"><strong>후라이드 참 잘하는 집</strong><span class="special-tags"><span class="badge badge-pill badge-primary">우수</span><span class="badge badge-pill badge-warning">쿠폰</span></span></p>
+                  <p class="scope pd1"><i class="material-icons scope-rate">star_rate</i><strong class="pd2">4.6</strong>최근리뷰 100+ 최근사장님댓글 100+</p>
+                  <p class="info-detailmenu pd1">후라이드치킨, 양념치킨</p>
+              </div>
+          </div>
+      </div>
+      <div class="middle-column">
+          <div class="item-card card03 row">
+              <div class="item-image">
+                  <img src="asset/img/item-image.png" alt="item-image" width="70">
+              </div>
+              <div class="item-info">
+                  <p class="info-title"><strong>후라이드 참 잘하는 집</strong><span class="special-tags"><span class="badge badge-pill badge-primary">우수</span><span class="badge badge-pill badge-warning">쿠폰</span></span></p>
+                  <p class="scope pd1"><i class="material-icons scope-rate">star_rate</i><strong class="pd2">4.6</strong>최근리뷰 100+ 최근사장님댓글 100+</p>
+                  <p class="info-detailmenu pd1">후라이드치킨, 양념치킨</p>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+  <p class="superlist02"><a href="#" class="badge badge-info">UltraCall</a></p>
+  <div class="big-column md1 row">
+      <div class="middle-column">
+          <div class="item-card card01 row">
+              <div class="item-image">
+                  <img src="asset/img/item-image.png" alt="item-image" width="70">
+              </div>
+              <div class="item-info">
+                  <p class="info-title"><strong>후라이드 참 잘하는 집</strong><span class="special-tags"><span class="badge badge-pill badge-primary">우수</span><span class="badge badge-pill badge-warning">쿠폰</span></span></p>
+                  <p class="scope pd1"><i class="material-icons scope-rate">star_rate</i><strong class="pd2">4.6</strong>최근리뷰 100+ 최근사장님댓글 100+</p>
+                  <p class="info-detailmenu pd1">후라이드치킨, 양념치킨</p>
+              </div>
+          </div>
+          <div class="item-card card02 row">
+              <div class="item-image">
+                  <img src="asset/img/item-image.png" alt="item-image" width="70">
+              </div>
+              <div class="item-info">
+                  <p class="info-title"><strong>후라이드 참 잘하는 집</strong><span class="special-tags"><span class="badge badge-pill badge-primary">우수</span><span class="badge badge-pill badge-warning">쿠폰</span></span></p>
+                  <p class="scope pd1"><i class="material-icons scope-rate">star_rate</i><strong class="pd2">4.6</strong>최근리뷰 100+ 최근사장님댓글 100+</p>
+                  <p class="info-detailmenu pd1">후라이드치킨, 양념치킨</p>
+              </div>
+          </div>
+      </div>
+      <div class="middle-column">
+          <div class="item-card card03 row">
+              <div class="item-image">
+                  <img src="asset/img/item-image.png" alt="item-image" width="70">
+              </div>
+              <div class="item-info">
+                  <p class="info-title"><strong>후라이드 참 잘하는 집</strong><span class="special-tags"><span class="badge badge-pill badge-primary">우수</span><span class="badge badge-pill badge-warning">쿠폰</span></span></p>
+                  <p class="scope pd1"><i class="material-icons scope-rate">star_rate</i><strong class="pd2">4.6</strong>최근리뷰 100+ 최근사장님댓글 100+</p>
+                  <p class="info-detailmenu pd1">후라이드치킨, 양념치킨</p>
+              </div>
+          </div>
+      </div>
+  </div>
+     
+      
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,264 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.navbar>.brand {
+    margin-top: -4px;
+}
+.user-position {
+    text-align: center;
+    margin-left: -100px;
+}
+.icon-check {
+    position: relative;
+    top: 6px;
+    left: 7px;
+    color: #000000;
+}
+.container-custom {
+    width: 1000px;
+    position: relative;
+    left: 50%;
+    margin-left: -500px;
+}
+.image-slide {
+    width: 978px;
+    height: 329px;
+    margin: 10px;
+    margin-top: 80px;
+}
+.item-list {
+    margin-bottom: -10px;
+}
+.item-list>.item {
+    width: 237px;
+    height: 170px;
+    margin: 10px;
+    margin-left: 25px;
+    border: 1px solid #dbdbdb;
+}
+.item-list>.item-set {
+    margin-left: 0px;
+}
+.item-recommend>.item01 {
+}
+.item-list>.item05 {
+    margin-left: 25px;
+}
+.item-recommend>.item {
+    width: 980px;
+    height: 620px;
+    margin: 10px;
+}
+.footer {
+    width: 100%;
+    background-color: #e3e3e3;
+    margin-top: 10px;
+    padding: 10px;
+}
+/* Grid css end */
+.navbar {
+    background-color: #2ac1bc;
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.container-custom>.image-slide {
+    
+}
+.item-image {
+    position: relative;
+    top: -28px;
+    left: 128px;
+}
+.item-image-set1{
+    top: -25px;
+    left: 118px;
+}
+.item-maintext {
+    text-align: left;
+    font-size: 23px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+.item-subtext {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #818181;
+}
+.item-recommend>h1 {
+    margin: 10px;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.item-recommend>.item>h1 {
+    margin-bottom: -80px;
+    line-height: 60px;
+}
+.highlight-style01 {
+    color: #45c1bf;
+}
+.highlight-style02 {
+    color: black;
+}
+.recommend-card {
+    
+}
+.recommend-main {
+    background-image: url(asset/img/food-img01.png);
+    background-size: cover;
+    width: 490px;
+    height: 250px;
+}
+.recommend-sub {
+    width: 490px;
+    height: 80px;
+    background-color: white;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+.recommend-card {
+    margin: 5px;
+}
+.recommend-sub>p {
+    color: #606060;
+}
+.coming-time {
+    font-size: 15px;
+    position: relative;
+    top: -76px;
+    left: 370px;
+    color: #606060;
+}
+.recommend-main-set1 {
+    background-image: url(asset/img/food-img02.png);
+}
+.recommend-main-set2 {
+    background-image: url(asset/img/food-image03.png);
+}
+.recommend-main-set3 {
+    background-image: url(asset/img/food-image04.jpg);
+}
+
+.item-recommend-image01 {
+    background-image: url(asset/img/food-img01.png);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+.item-recommend-image02 {
+    background-image: url(asset/img/food-img02.png);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+.recommend-title {
+    height: 1px;
+    position: relative;
+    top: -140px;
+}
+.bamin-store {
+    width: 100%;
+    height: 30px;
+    background-color: #d4cbc3;
+}
+.bamin-store>p {
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: black;
+}
+.footer>p {
+    line-height: 12px;
+}
+.footer>.set1 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.crossline {
+    width: 100%;
+    height: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 1px solid #d0d0d0;
+}
+/* css end */
+/* POWERED BY CODEPEN */
+
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+.codepen-carousel {
+}
